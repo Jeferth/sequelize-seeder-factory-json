@@ -1,6 +1,6 @@
 {
   "name": "sequelize-seeder-factory-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ultra-simple JSON-based seeder factory for Sequelize - Zero configuration required!",
   "main": "index.js",
   "scripts": {
