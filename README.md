@@ -5,14 +5,14 @@ Ultra-simple JSON-based seeder factory for Sequelize. **Zero configuration requi
 ## 🚀 Installation
 
 ```bash
-npm install sequelize-seeder-factory
+npm install sequelize-seeder-factory-json
 ```
 
 ## 📖 Quick Start
 
 ### 1. Install the package
 ```bash
-npm install sequelize-seeder-factory
+npm install sequelize-seeder-factory-json
 ```
 
 ### 2. Create your data file
@@ -30,7 +30,7 @@ Create `data/users.json`:
 ### 3. Create your seeder
 Create `seeders/20250101000000-users.js`:
 ```javascript
-const { SeederFactory } = require("sequelize-seeder-factory");
+const { SeederFactory } = require("sequelize-seeder-factory-json");
 
 const ENTITY_NAME = "Users";
 const CUSTOM_CONFIG = {

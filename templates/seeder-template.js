@@ -18,7 +18,7 @@
  * 5. Run: npx sequelize-cli db:seed --seed 20250101000000-my-data.js
  */
 
-const { SeederFactory } = require("sequelize-seeder-factory");
+const { SeederFactory } = require("sequelize-seeder-factory-json");
 
 // 🎯 CHANGE THIS LINE - Set your entity name
 const ENTITY_NAME = "Users"; // Examples: "Users", "Customers", "Products", "Orders"

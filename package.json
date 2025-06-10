@@ -22,12 +22,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "<https://github.com/Jeferth/sequelize-seeder-factory.git>"
+    "url": "<https://github.com/Jeferth/sequelize-seeder-factory-json.git>"
   },
   "bugs": {
-    "url": "<https://github.com/Jeferth/sequelize-seeder-factory/issues>"
+    "url": "<https://github.com/Jeferth/sequelize-seeder-factory-json/issues>"
   },
-  "homepage": "<https://github.com/Jeferth/sequelize-seeder-factory#readme>",
+  "homepage": "<https://github.com/Jeferth/sequelize-seeder-factory-json#readme>",
   "peerDependencies": {
     "sequelize": "^6.0.0"
   },
