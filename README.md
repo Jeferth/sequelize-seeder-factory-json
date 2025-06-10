@@ -104,13 +104,7 @@ seeders/
 │   ├── users.json          ← Your data files (simple arrays)
 │   ├── products.json
 │   └── categories.json
-├── templates/
-│   └── seeder-template.js  ← Copy this template
 ├── 20250101000000-users.js ← Your actual seeders
-└── factories/              ← Don't touch these!
-    ├── seeder-factory.js
-    ├── seeder-config.js
-    └── data-processor.js
 ```
 
 ## 🎨 Examples
