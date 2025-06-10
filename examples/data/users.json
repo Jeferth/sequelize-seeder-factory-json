@@ -1,0 +1,46 @@
+[
+    {
+        "userName": "test.user1",
+        "name": "Test User One",
+        "phone": "+1-555-0007",
+        "email": "test10@weconnect.com",
+        "entityId": 1,
+        "entityType": "INTERNAL_BUSINESS_ENTITY",
+        "internalBusinessEntityId": 1,
+        "disabled": false,
+        "archived": false
+    },
+    {
+        "userName": "test.user2",
+        "name": "Test User Two",
+        "phone": "+1-555-0008",
+        "email": "test20@weconnect.com",
+        "entityId": 1,
+        "entityType": "INTERNAL_BUSINESS_ENTITY",
+        "internalBusinessEntityId": 1,
+        "disabled": false,
+        "archived": false
+    },
+    {
+        "userName": "demo.user",
+        "name": "Demo User",
+        "phone": "+1-555-0009",
+        "email": "demo0@weconnect.com",
+        "entityId": 1,
+        "entityType": "INTERNAL_BUSINESS_ENTITY",
+        "internalBusinessEntityId": 1,
+        "disabled": false,
+        "archived": false
+    },
+    {
+        "userName": "guest",
+        "name": "Guest User",
+        "phone": "+1-555-0010",
+        "email": "guest0@weconnect.com",
+        "entityId": 1,
+        "entityType": "INTERNAL_BUSINESS_ENTITY",
+        "internalBusinessEntityId": 1,
+        "disabled": false,
+        "archived": false
+    }
+]

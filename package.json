@@ -1,0 +1,49 @@
+{
+  "name": "sequelize-seeder-factory",
+  "version": "1.0.0",
+  "description": "Ultra-simple JSON-based seeder factory for Sequelize - Zero configuration required!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint lib/ templates/",
+    "prepare": "npm run lint"
+  },
+  "keywords": [
+    "sequelize",
+    "seeder",
+    "database",
+    "json",
+    "factory",
+    "migration",
+    "bulk-insert",
+    "zero-config"
+  ],
+  "author": "Jefh Crisostomo <jeferth.crisostomo@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "<https://github.com/Jeferth/sequelize-seeder-factory.git>"
+  },
+  "bugs": {
+    "url": "<https://github.com/Jeferth/sequelize-seeder-factory/issues>"
+  },
+  "homepage": "<https://github.com/Jeferth/sequelize-seeder-factory#readme>",
+  "peerDependencies": {
+    "sequelize": "^6.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "sequelize": "^6.0.0"
+  },
+  "files": [
+    "lib/",
+    "templates/",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
