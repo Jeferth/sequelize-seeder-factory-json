@@ -1,44 +1,65 @@
-# Sequelize Seeder Factory - ULTRA SIMPLE! 🚀
+# Sequelize Seeder Factory 🚀
 
-**Zero configuration required!** Just create a JSON file and run your seeder.
+Ultra-simple JSON-based seeder factory for Sequelize. **Zero configuration required!**
 
-## 🎯 How to Use (4 Simple Steps)
+## 🚀 Installation
 
-### Step 1: Create Your Data File
+```bash
+npm install sequelize-seeder-factory
+```
 
-Create `data/users.json` (simple array format):
+## 📖 Quick Start
 
+### 1. Install the package
+```bash
+npm install sequelize-seeder-factory
+```
+
+### 2. Create your data file
+Create `data/users.json`:
 ```json
 [
     {
         "userName": "john.doe",
         "name": "John Doe",
-        "email": "john.doe@example.com",
-        "phone": "+1234567890",
-        "entityId": 1,
-        "entityType": "User"
+        "email": "john.doe@example.com"
     }
 ]
 ```
 
-### Step 2: Copy Template
-
-Copy `templates/seeder-template.js` to `20250101000000-users.js`
-
-### Step 3: Configure Your Seeder
-
+### 3. Create your seeder
+Create `seeders/20250101000000-users.js`:
 ```javascript
-const ENTITY_NAME = "Users"; // ← Change this!
+const { SeederFactory } = require("sequelize-seeder-factory");
 
+const ENTITY_NAME = "Users";
 const CUSTOM_CONFIG = {
     tableName: "People",
     batchSize: 100,
     uniqueFields: ["userName", "email"]
 };
+
+module.exports = {
+    up: async (queryInterface, Sequelize) => {
+        const factory = new SeederFactory(queryInterface, Sequelize);
+        const processedData = await factory.processData(ENTITY_NAME, {
+            customConfig: CUSTOM_CONFIG
+        });
+        await factory.insertData(ENTITY_NAME, processedData, {
+            customConfig: CUSTOM_CONFIG
+        });
+    },
+    
+    down: async (queryInterface, Sequelize) => {
+        const factory = new SeederFactory(queryInterface, Sequelize);
+        await factory.removeData(ENTITY_NAME, {
+            customConfig: CUSTOM_CONFIG
+        });
+    }
+};
 ```
 
-### Step 4: Run It!
-
+### 4. Run it!
 ```bash
 npx sequelize-cli db:seed --seed 20250101000000-users.js
 ```
